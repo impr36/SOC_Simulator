@@ -1,0 +1,18 @@
+CREDENTIAL_RULES = {
+    1012: ["lsass"],
+    1013: ["credential dumping"],
+    1212: ["saved credential"],
+    1213: ["credential manager"],
+    1214: ["sam registry"],
+    1215: ["ntds.dit"],
+    1216: ["lsass memory"],
+    1469: ["mimikatz"],
+    1470: ["lsa secret"],
+    1473: ["sam backup"],
+    1474: ["dpapi"],
+    1523: ["lsass handle"],
+    1524: ["ntds dump"],
+    1529: ["mimikatz"],
+    1766: ["offline credential"],
+    1806: ["lsass memory read"],
+}

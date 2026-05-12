@@ -1,0 +1,250 @@
+{
+    "hids_rules": {
+        "Brute Force Login Attempt": {
+            "event_id": 4625,
+            "threshold": 5,
+            "window_min": 5,
+            "severity": "HIGH",
+            "description": "Multiple failed login attempts detected"
+        },
+        "Account Lockout Triggered": {
+            "event_id": 4740,
+            "threshold": 1,
+            "window_min": 1,
+            "severity": "HIGH",
+            "description": "Account locked due to repeated failures"
+        },
+        "Login Outside Business Hours": {
+            "event_id": 4624,
+            "threshold": 3,
+            "window_min": 10,
+            "severity": "MEDIUM",
+            "description": "Multiple logins during unusual hours"
+        },
+        "Admin Privileges Assigned": {
+            "event_id": 4672,
+            "threshold": 1,
+            "window_min": 1,
+            "severity": "HIGH",
+            "description": "Special privileges assigned"
+        },
+        "Unauthorized Privilege Use": {
+            "event_id": 4673,
+            "threshold": 3,
+            "window_min": 5,
+            "severity": "HIGH",
+            "description": "Sensitive privilege used repeatedly"
+        },
+        "Security Logs Cleared": {
+            "event_id": 1102,
+            "threshold": 1,
+            "window_min": 1,
+            "severity": "HIGH",
+            "description": "Security logs were cleared"
+        },
+        "Multiple RDP Logins": {
+            "event_id": 4624,
+            "threshold": 5,
+            "window_min": 10,
+            "severity": "MEDIUM",
+            "description": "Multiple RDP logins detected"
+        },
+        "Suspicious PowerShell Execution": {
+            "event_id": 4688,
+            "threshold": 3,
+            "window_min": 5,
+            "severity": "HIGH",
+            "description": "Repeated PowerShell execution"
+        },
+        "Encoded PowerShell Command": {
+            "event_id": 4688,
+            "threshold": 1,
+            "window_min": 1,
+            "severity": "HIGH",
+            "description": "Encoded PowerShell detected"
+        },
+        "Execution from Temp Directory": {
+            "event_id": 4688,
+            "threshold": 3,
+            "window_min": 5,
+            "severity": "HIGH",
+            "description": "Process executed from temp folder"
+        },
+        "Process Spawn Burst": {
+            "event_id": 4688,
+            "threshold": 10,
+            "window_min": 2,
+            "severity": "MEDIUM",
+            "description": "High number of processes created"
+        },
+        "Suspicious CMD Usage": {
+            "event_id": 4688,
+            "threshold": 4,
+            "window_min": 5,
+            "severity": "MEDIUM",
+            "description": "Frequent command prompt usage"
+        },
+        "Mass File Deletion": {
+            "event_id": 4660,
+            "threshold": 5,
+            "window_min": 2,
+            "severity": "HIGH",
+            "description": "Multiple files deleted quickly"
+        },
+        "Sensitive File Access": {
+            "event_id": 4663,
+            "threshold": 5,
+            "window_min": 3,
+            "severity": "MEDIUM",
+            "description": "Repeated access to sensitive files"
+        },
+        "Rapid File Modification": {
+            "event_id": 4663,
+            "threshold": 10,
+            "window_min": 2,
+            "severity": "MEDIUM",
+            "description": "Files modified rapidly"
+        },
+        "File Rename Burst": {
+            "event_id": 4663,
+            "threshold": 6,
+            "window_min": 3,
+            "severity": "MEDIUM",
+            "description": "Multiple file renames detected"
+        },
+        "Directory Traversal Activity": {
+            "event_id": 4663,
+            "threshold": 8,
+            "window_min": 5,
+            "severity": "MEDIUM",
+            "description": "Multiple directory access attempts"
+        },
+        "Service Installed": {
+            "event_id": 7045,
+            "threshold": 1,
+            "window_min": 1,
+            "severity": "HIGH",
+            "description": "New service installed"
+        },
+        "Scheduled Task Created": {
+            "event_id": 4698,
+            "threshold": 1,
+            "window_min": 1,
+            "severity": "HIGH",
+            "description": "Scheduled task created"
+        },
+        "Startup Registry Modified": {
+            "event_id": 4657,
+            "threshold": 2,
+            "window_min": 5,
+            "severity": "HIGH",
+            "description": "Startup registry modified"
+        },
+        "Firewall Rule Modified": {
+            "event_id": 4946,
+            "threshold": 2,
+            "window_min": 5,
+            "severity": "MEDIUM",
+            "description": "Firewall rule changed"
+        },
+        "Antivirus Disabled": {
+            "event_id": 5001,
+            "threshold": 1,
+            "window_min": 1,
+            "severity": "HIGH",
+            "description": "Antivirus service stopped"
+        },
+        "User Account Created": {
+            "event_id": 4720,
+            "threshold": 2,
+            "window_min": 5,
+            "severity": "HIGH",
+            "description": "Multiple user accounts created"
+        },
+        "User Account Deleted": {
+            "event_id": 4726,
+            "threshold": 2,
+            "window_min": 5,
+            "severity": "MEDIUM",
+            "description": "User accounts deleted"
+        },
+        "Password Changed": {
+            "event_id": 4723,
+            "threshold": 3,
+            "window_min": 5,
+            "severity": "MEDIUM",
+            "description": "Multiple password changes"
+        },
+        "Group Membership Changed": {
+            "event_id": 4732,
+            "threshold": 2,
+            "window_min": 5,
+            "severity": "HIGH",
+            "description": "User added to privileged group"
+        },
+        "Failed Service Start": {
+            "event_id": 7000,
+            "threshold": 3,
+            "window_min": 5,
+            "severity": "LOW",
+            "description": "Service failed to start multiple times"
+        },
+        "USB Device Connected": {
+            "event_id": 2003,
+            "threshold": 2,
+            "window_min": 5,
+            "severity": "MEDIUM",
+            "description": "USB device connected"
+        }
+    },
+    "nids_rules": {
+        "Port Scan Detected": {
+            "threshold": 10,
+            "window_sec": 60,
+            "severity": "HIGH",
+            "description": "Multiple port probes detected"
+        },
+        "SYN Flood Attack": {
+            "threshold": 100,
+            "window_sec": 30,
+            "severity": "HIGH",
+            "description": "Possible SYN flood attack"
+        },
+        "Reconnaissance Activity": {
+            "threshold": 5,
+            "window_sec": 300,
+            "severity": "MEDIUM",
+            "description": "Suspicious scanning activity"
+        },
+        "DNS Tunneling Suspected": {
+            "threshold": 20,
+            "window_sec": 120,
+            "severity": "HIGH",
+            "description": "Unusual DNS activity detected"
+        },
+        "Beaconing Activity": {
+            "threshold": 10,
+            "window_sec": 300,
+            "severity": "HIGH",
+            "description": "Regular outbound connection pattern"
+        },
+        "Large Data Transfer": {
+            "threshold": 50,
+            "window_sec": 60,
+            "severity": "HIGH",
+            "description": "Large outbound data transfer"
+        },
+        "Suspicious External Connection": {
+            "threshold": 5,
+            "window_sec": 120,
+            "severity": "MEDIUM",
+            "description": "Connections to unusual external IPs"
+        },
+        "Multiple Failed Connections": {
+            "threshold": 15,
+            "window_sec": 60,
+            "severity": "MEDIUM",
+            "description": "Repeated connection failures"
+        }
+    }
+}

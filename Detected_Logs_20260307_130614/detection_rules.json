@@ -1,0 +1,42 @@
+{
+    "hids_rules": {
+        "auth_failure": {
+            "threshold": 5,
+            "window_min": 5,
+            "severity": "HIGH",
+            "desc": ">5 failed logins in 5 min = Brute force"
+        },
+        "privilege_escalation": {
+            "threshold": 1,
+            "window_min": 1,
+            "severity": "HIGH",
+            "desc": "Any privilege escalation detected"
+        },
+        "suspicious_process": {
+            "threshold": 3,
+            "window_min": 10,
+            "severity": "MEDIUM",
+            "desc": "3+ unknown processes in 10 min"
+        }
+    },
+    "nids_rules": {
+        "port_scan": {
+            "threshold": 10,
+            "window_sec": 60,
+            "severity": "HIGH",
+            "desc": ">10 port probes in 60s = Recon"
+        },
+        "syn_flood": {
+            "threshold": 100,
+            "window_sec": 30,
+            "severity": "HIGH",
+            "desc": ">100 SYN without ACK in 30s = DoS"
+        },
+        "reconnaissance": {
+            "threshold": 5,
+            "window_sec": 300,
+            "severity": "MEDIUM",
+            "desc": "5+ unusual patterns in 5 min"
+        }
+    }
+}

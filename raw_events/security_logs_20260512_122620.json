@@ -1,0 +1,14 @@
+[
+    {
+        "timestamp":"2026-05-12T12:25:58",
+        "event_id":4688,
+        "source":"Microsoft-Windows-Security-Auditing",
+        "log_source":"Security",
+        "computer":"SideKick_2",
+        "user":"",
+        "process_name":"",
+        "type":"raw_event",
+        "severity":"INFO",
+        "description":"Event ID 4688 from Microsoft-Windows-Security-Auditing"
+    }
+]

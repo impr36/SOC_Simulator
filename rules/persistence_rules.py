@@ -1,0 +1,17 @@
+PERSISTENCE_RULES = {
+    4698: ["scheduled task created"],
+    4702: ["scheduled task updated"],
+    1008: ["registry persistence"],
+    1010: ["registry startup"],
+    1029: ["startup folder"],
+    1205: ["wmi event subscription"],
+    1240: ["registry run key"],
+    1247: ["scheduled task persistence"],
+    1250: ["appinit dll"],
+    1251: ["ifeo"],
+    1253: ["sticky keys"],
+    1561: ["scheduled task persistence"],
+    1562: ["startup folder"],
+    1563: ["service persistence"],
+    1722: ["ifeo"],
+}

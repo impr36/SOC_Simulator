@@ -1,0 +1,17 @@
+POWERSHELL_RULES = {
+    4103: ["powershell", "encoded", "bypass"],
+    4104: ["powershell", "scriptblock", "encodedcommand"],
+    4105: ["powershell"],
+    1019: ["-enc", "-encodedcommand", "frombase64string"],
+    1153: ["-enc", "encodedcommand", "frombase64string", "tobase64string"],
+    1154: ["iex", "invoke-expression", "-nop", "-w hidden", "bypass"],
+    1155: ["invoke-shellcode", "reflection.assembly", "assembly.load", "virtualalloc"],
+    1274: ["downloadstring", "downloadfile", "webclient", "downloadcradle"],
+    1276: ["reflection", "assembly.load", "add-type"],
+    1542: ["downloadstring", "iwr", "invoke-webrequest"],
+    1543: ["-enc", "encodedcommand"],
+    1544: ["amsi", "bypass"],
+    1865: ["powershell", "from browser"],
+    1877: ["invoke-webrequest", "downloadstring", "iwr", "net.webclient"],
+    1558: ["tcpclient", "reverse", "powershell icmp"],
+}
