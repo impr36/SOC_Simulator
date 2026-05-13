@@ -15,7 +15,7 @@ NOTE : Run Cmd as admin then do the above steps in cmd.
 installation 
 for python in cmd - go to that folder where python exe file is downloaded then in CMD > python-3.14.5-amd64.exe  add path to it
 
-Wheel Files installation - type > pip install "Wheel Files\*.whl" 
+Wheel Files installation - type > pip install "Wheels\*.whl" 
 or 
 > for %f in ("Wheel Files\*.whl") do pip install "%f"
 > pip install --no-index --find-links="Wheel Files" -r requirements.txt
