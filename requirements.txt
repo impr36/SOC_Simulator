@@ -1,8 +1,24 @@
-pandas
-plotly
-scapy
-pywin32; sys_platform == 'win32'
-pyinstaller
-cryptography
-matplotlib
 customtkinter
+pandas
+matplotlib
+cryptography
+pywin32; sys_platform == 'win32'
+watchdog
+scapy
+psutil
+pillow
+numpy
+darkdetect
+packaging
+contourpy
+cycler
+fonttools
+kiwisolver
+pyparsing
+python-dateutil
+pytz
+tzdata
+cffi
+pycparser
+six
+pyperclip
